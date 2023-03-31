@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logo.svg" type="image/png">
+  <title>Guvi Sign in page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-light">
+  <div class="sign-in p-4">
+    <div class="mb-3">
+      <div>
+        <h2 class="my-3 fw-bold">Let's Sign in</h2>
+        <p>Welcome Back, You've<br>been missed!</p>
+      </div>
+    </div>
+
+   <form  method="post" action="php/signin.php">
+    <div class="mb-3">
+	    <label class="form-label mb-1">Username</label>
+	    <div class="input-group border bg-white rounded-3 py1">
+	        <input type="text" class="form-control bg-transparent  rounded-0 border-0 px-0" placeholder="Enter Username" name="uname" required >
+	    </div>
+	</div>
+	<div class="mb-3">
+	    <label class="form-label mb-1">Password</label>
+	    <div class="input-group border bg-white rounded-3 py1">
+	        <input type="text" class="form-control bg-transparent rounded-0 border-0 px-0" placeholder="Enter Username" name="psw" required >
+	    </div>
+	</div>
+    <div class="mb-3">
+		<button type="submit" class="btn btn-info w-100" name="login">Login</button>
+    <p class="text-muted text-center small" >Sign up to <a href="register.html">Register</a></p>
+     
+    </div>
+
+   
+  </form>
+  </div>
+  
+</body>
+</html>
